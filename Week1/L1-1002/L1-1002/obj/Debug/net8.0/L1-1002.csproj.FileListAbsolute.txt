@@ -1,0 +1,15 @@
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\bin\Debug\net8.0\L1-1002.exe
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\bin\Debug\net8.0\L1-1002.deps.json
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\bin\Debug\net8.0\L1-1002.runtimeconfig.json
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\bin\Debug\net8.0\L1-1002.dll
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\bin\Debug\net8.0\L1-1002.pdb
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.GeneratedMSBuildEditorConfig.editorconfig
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.AssemblyInfoInputs.cache
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.AssemblyInfo.cs
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.csproj.CoreCompileInputs.cache
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.sourcelink.json
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.dll
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\refint\L1-1002.dll
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.pdb
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\L1-1002.genruntimeconfig.cache
+D:\VSCode\Programmi\Back-end-Epicode\Week1\L1-1002\L1-1002\obj\Debug\net8.0\ref\L1-1002.dll
