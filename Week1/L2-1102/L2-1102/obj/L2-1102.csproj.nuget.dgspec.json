@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L1-1002/L1-1002/L1-1002.csproj": {}
+    "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L2-1102/L2-1102/L2-1102.csproj": {}
   },
   "projects": {
-    "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L1-1002/L1-1002/L1-1002.csproj": {
+    "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L2-1102/L2-1102/L2-1102.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L1-1002/L1-1002/L1-1002.csproj",
-        "projectName": "L1-1002",
-        "projectPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L1-1002/L1-1002/L1-1002.csproj",
+        "projectUniqueName": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L2-1102/L2-1102/L2-1102.csproj",
+        "projectName": "L2-1102",
+        "projectPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L2-1102/L2-1102/L2-1102.csproj",
         "packagesPath": "/Users/daniele/.nuget/packages/",
-        "outputPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L1-1002/L1-1002/obj/",
+        "outputPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week1/L2-1102/L2-1102/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/daniele/.nuget/NuGet/NuGet.Config"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -54,26 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.12, 8.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[8.0.12, 8.0.12]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.12, 8.0.12]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/daniele/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
