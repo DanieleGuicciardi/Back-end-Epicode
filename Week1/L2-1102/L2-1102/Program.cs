@@ -2,13 +2,14 @@
 
 class Person
 {
-    public string Name { get; set; }
+    //dichiarazine delle 3 variabili
+    public string Name { get; set; }  //permettono di settera e prendere la variabile
     public string Surname { get; set; }
     public int Age { get; set; }
-
-    public Person(string name, string surname, int age)
+    
+    public Person(string name, string surname, int age) //COSTRUTTORE, riceve 3 parametri
     {
-        Name = name;
+        Name = name;      //assegna ai parametri le proprieta
         Surname = surname;
         Age = age;
     }
@@ -33,10 +34,11 @@ class Person
     
 }
 
-class Program
-{
+class Program   //questa classe deve essere sempre presente per far funzionare il programma
+{              
     static void Main()
     {
+        //qui viene richiamato il COSTRUTTORE, quindi assegna i valori ai parametri
         Person person = new Person("Daniele", "Guicciardi", 21);
         
        Console.WriteLine("Here is the name of the person:");
