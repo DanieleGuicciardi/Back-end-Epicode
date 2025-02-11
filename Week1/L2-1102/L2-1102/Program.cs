@@ -25,6 +25,11 @@ class Person
     {
         return Age;
     }
+
+    public string GetInfo()
+    {
+        return $"Name: {Name} | Surname: {Surname} | Age: {Age}";
+    }
     
 }
 
@@ -38,6 +43,6 @@ class Program
        Console.WriteLine($"Name: {person.GetName()}");
        Console.WriteLine($"Surname: {person.GetSurname()}");
        Console.WriteLine($"Age: {person.GetAge()}");
-       Console.WriteLine($"Here are the complete information: ");
+       Console.WriteLine($"Here are the complete information: {person.GetInfo()}");
     }
 }
