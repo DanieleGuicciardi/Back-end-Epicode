@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../BuildWeekW8" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../Netflix-clone" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../../d9-redux" vcs="Git" />
+  </component>
+</project>
