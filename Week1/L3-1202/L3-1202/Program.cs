@@ -1,4 +1,5 @@
 using System;
+using L3_1202;
 
 class Program
 {
@@ -31,7 +32,8 @@ class Program
             }
             else if (choice == "3")
             {
-                
+                AverageAndSum operations = new AverageAndSum();
+                operations.function();
                 break;
             }
             else if (choice == "4")
