@@ -1,12 +1,43 @@
-public class Login
+public class Module
 {
     private string Username;
-    private string Password;
 
-    public Login(string username, string password)
+    public Module(string username, string password)
     {
         Username = username;
-        Password = password;
+    }
+
+    private void Login()
+    {
+        Console.WriteLine("Digit your username: ");
+        string username = Console.ReadLine();
+        string[] userDatabase = { "Danieloun", "Valerio", "Simone", "Giorgio" };
+        int search = Array.IndexOf(userDatabase, username);
+
+        if (search != -1)
+        {
+            Console.WriteLine("Digit your password: ");
+            string password = Console.ReadLine();
+
+            if (password == "1234")
+            {
+                Console.WriteLine("User logged");
+            }
+            else
+            {
+                Console.WriteLine("Password doesn t match che username");
+                Console.WriteLine("Enter to retry");
+                Console.ReadLine();
+            }
+        }
+        else
+        {
+            Console.WriteLine("This user do not exist");
+            Console.WriteLine("Enter to retry");
+            Console.ReadLine();
+        }
+        
+        
     }
 
     public void function()
@@ -26,7 +57,7 @@ public class Login
 
             if (x == 1)
             {
-                Console.WriteLine("Sei dentro 1");
+                Login();
             }
             else if (x == 2)
             {

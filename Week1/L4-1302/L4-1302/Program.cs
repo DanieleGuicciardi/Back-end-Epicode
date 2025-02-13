@@ -4,8 +4,8 @@ class Program
 {
     static void Main()
     {
-        Login login = new Login("Danieloun", "1234Dn");
-        login.function();
+        Module module = new Module("Danieloun", "1234Dn");
+        module.function();
 
     }
 }
