@@ -9,6 +9,7 @@ public class Module
 
     private void Login()
     {
+        //inserire while false e la proprieta login come prop generale
         Console.WriteLine("Digit your username: ");
         string username = Console.ReadLine();
         string[] userDatabase = { "Danieloun", "Valerio", "Simone", "Giorgio" };
@@ -37,6 +38,11 @@ public class Module
             Console.ReadLine();
         }
         
+        
+    }
+
+    private void Logout()
+    {
         
     }
 

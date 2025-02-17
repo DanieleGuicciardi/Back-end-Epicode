@@ -1,0 +1,15 @@
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/bin/Debug/net8.0/L1-1702
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/bin/Debug/net8.0/L1-1702.deps.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/bin/Debug/net8.0/L1-1702.runtimeconfig.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/bin/Debug/net8.0/L1-1702.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/bin/Debug/net8.0/L1-1702.pdb
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.AssemblyInfoInputs.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.AssemblyInfo.cs
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.csproj.CoreCompileInputs.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.sourcelink.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/refint/L1-1702.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.pdb
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/L1-1702.genruntimeconfig.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/Debug/net8.0/ref/L1-1702.dll
