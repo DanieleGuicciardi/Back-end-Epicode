@@ -14,3 +14,5 @@ class Program
         calculator.Function();
     }
 }
+
+//implementare un array per restituire tutte le cose ordinate.
