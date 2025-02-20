@@ -1,8 +1,8 @@
 public class Esperienza
 {
-    private string Azienda { get; set; }
-    private string JobTitle { get; set; }
-    private DateOnly Dal { get; set; }
-    private DateOnly Al { get; set; }
-    private string Descrizione { get; set; }
+    public string Azienda { get; set; }
+    public string JobTitle { get; set; }
+    public DateOnly Dal { get; set; }
+    public DateOnly Al { get; set; }
+    public string Descrizione { get; set; }
 }

@@ -2,9 +2,9 @@ using System.Runtime.InteropServices.JavaScript;
 
 public class Studi
 {
-    private string Qualifica { get; set; }
-    private string Istituto { get; set; }
-    private string Tipo { get; set; }
-    private DateOnly Dal { get; set; } 
-    private DateOnly Al { get; set; }
+    public string Qualifica { get; set; }
+    public string Istituto { get; set; }
+    public string Tipo { get; set; }
+    public DateOnly Dal { get; set; } 
+    public DateOnly Al { get; set; }
 }
