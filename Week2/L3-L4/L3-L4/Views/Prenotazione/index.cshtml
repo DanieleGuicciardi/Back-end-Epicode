@@ -1,0 +1,109 @@
+@model L3_L4.Models.Prenotazione
+@{
+    ViewData["Title"] = "Prenotazione Biglietti";
+}
+
+<h2>Prenotazione Biglietti</h2>
+
+<!-- 🔹 FORM DI PRENOTAZIONE -->
+<form id="prenotazioneForm" asp-action="Prenota" method="post">
+    <div class="mb-3">
+        <label for="Nome" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="Nome" name="Nome" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="Cognome" class="form-label">Cognome</label>
+        <input type="text" class="form-control" id="Cognome" name="Cognome" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="Sala" class="form-label">Seleziona Sala</label>
+        <select class="form-select" id="Sala" name="Sala" required>
+            @foreach (var sala in ViewBag.Sale)
+            {
+                <option value="@sala.Nome">@sala.Nome.ToString()</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Tipo di Biglietto</label>
+        <div>
+            <input type="radio" id="Intero" name="TipoBiglietto" value="Intero" checked>
+            <label for="Intero">Intero</label>
+            <input type="radio" id="Ridotto" name="TipoBiglietto" value="Ridotto">
+            <label for="Ridotto">Ridotto</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Prenota</button>
+</form>
+
+<hr>
+
+<!-- 🔹 TABELLA RIEPILOGO SALE -->
+<h2>Riepilogo Sale</h2>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Sala</th>
+            <th>Biglietti Venduti</th>
+            <th>Biglietti Ridotti</th>
+            <th>Posti Disponibili</th>
+        </tr>
+    </thead>
+    <tbody id="riepilogoSale">
+        @foreach (var sala in ViewBag.Sale)
+        {
+            <tr>
+                <td>@sala.Nome.ToString()</td>
+                <td>@sala.BigliettiVenduti</td>
+                <td>@sala.BigliettiRidotti</td>
+                <td>@(sala.Capienza - sala.BigliettiVenduti)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- 🔹 SCRIPT AJAX PER AGGIORNAMENTO LIVE -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Aggiornamento tabella in tempo reale ogni 5 secondi
+        setInterval(aggiornaDatiSale, 5000);
+
+        // Funzione AJAX per aggiornare la tabella delle sale
+        function aggiornaDatiSale() {
+            $.get("/Prenotazione/GetDatiSale", function (data) {
+                var tbody = $("#riepilogoSale");
+                tbody.empty();
+
+                $.each(data, function (index, sala) {
+                    tbody.append(
+                        `<tr>
+                            <td>${sala.nome}</td>
+                            <td>${sala.bigliettiVenduti}</td>
+                            <td>${sala.bigliettiRidotti}</td>
+                            <td>${sala.postiLiberi}</td>
+                        </tr>`
+                    );
+                });
+            });
+        }
+
+        // Invio del form via AJAX per evitare il reload della pagina
+        $("#prenotazioneForm").submit(function (event) {
+            event.preventDefault(); // Previene il refresh della pagina
+            
+            var formData = $(this).serialize();
+
+            $.post("/Prenotazione/Prenota", formData, function () {
+                aggiornaDatiSale(); // Aggiorna i dati dopo una prenotazione
+                $("#prenotazioneForm")[0].reset(); // Resetta il form
+            }).fail(function (response) {
+                alert("Errore: " + response.responseText);
+            });
+        });
+    });
+</script>
