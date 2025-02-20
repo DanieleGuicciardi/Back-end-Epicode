@@ -15,4 +15,3 @@ class Program
     }
 }
 
-//implementare un array per restituire tutte le cose ordinate.

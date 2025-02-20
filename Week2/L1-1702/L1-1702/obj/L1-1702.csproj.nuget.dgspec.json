@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCode\\Programmi\\Back-end-Epicode\\Week2\\L1-1702\\L1-1702\\L1-1702.csproj": {}
+    "/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/L1-1702.csproj": {}
   },
   "projects": {
-    "D:\\VSCode\\Programmi\\Back-end-Epicode\\Week2\\L1-1702\\L1-1702\\L1-1702.csproj": {
+    "/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/L1-1702.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCode\\Programmi\\Back-end-Epicode\\Week2\\L1-1702\\L1-1702\\L1-1702.csproj",
+        "projectUniqueName": "/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/L1-1702.csproj",
         "projectName": "L1-1702",
-        "projectPath": "D:\\VSCode\\Programmi\\Back-end-Epicode\\Week2\\L1-1702\\L1-1702\\L1-1702.csproj",
-        "packagesPath": "C:\\Users\\saas\\.nuget\\packages\\",
-        "outputPath": "D:\\VSCode\\Programmi\\Back-end-Epicode\\Week2\\L1-1702\\L1-1702\\obj\\",
+        "projectPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/L1-1702.csproj",
+        "packagesPath": "/Users/daniele/.nuget/packages/",
+        "outputPath": "/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L1-1702/L1-1702/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\saas\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/daniele/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/daniele/.dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
