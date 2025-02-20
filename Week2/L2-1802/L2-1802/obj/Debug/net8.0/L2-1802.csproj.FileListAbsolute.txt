@@ -1,0 +1,15 @@
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.GeneratedMSBuildEditorConfig.editorconfig
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.AssemblyInfoInputs.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.AssemblyInfo.cs
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.csproj.CoreCompileInputs.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.sourcelink.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/bin/Debug/net8.0/L2-1802
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/bin/Debug/net8.0/L2-1802.deps.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/bin/Debug/net8.0/L2-1802.runtimeconfig.json
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/bin/Debug/net8.0/L2-1802.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/bin/Debug/net8.0/L2-1802.pdb
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/refint/L2-1802.dll
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.pdb
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/L2-1802.genruntimeconfig.cache
+/Users/daniele/Documents/Code/Back-end-Epicode/Week2/L2-1802/L2-1802/obj/Debug/net8.0/ref/L2-1802.dll
