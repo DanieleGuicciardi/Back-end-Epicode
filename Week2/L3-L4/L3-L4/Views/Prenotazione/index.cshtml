@@ -5,7 +5,6 @@
 
 <h2>Prenotazione Biglietti</h2>
 
-<!-- 🔹 FORM DI PRENOTAZIONE -->
 <form id="prenotazioneForm" asp-action="Prenota" method="post">
     <div class="mb-3">
         <label for="Nome" class="form-label">Nome</label>
@@ -42,7 +41,6 @@
 
 <hr>
 
-<!-- 🔹 TABELLA RIEPILOGO SALE -->
 <h2>Riepilogo Sale</h2>
 <table class="table table-bordered">
     <thead>
@@ -66,14 +64,14 @@
     </tbody>
 </table>
 
-<!-- 🔹 SCRIPT AJAX PER AGGIORNAMENTO LIVE -->
+<!--  SCRIPT AJAX PER AGGIORNAMENTO LIVE -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
-        // Aggiornamento tabella in tempo reale ogni 5 secondi
+        // Aggiornamento tabella ogni 5 secondi
         setInterval(aggiornaDatiSale, 5000);
 
-        // Funzione AJAX per aggiornare la tabella delle sale
+        // Funzione AJAX 
         function aggiornaDatiSale() {
             $.get("/Prenotazione/GetDatiSale", function (data) {
                 var tbody = $("#riepilogoSale");
@@ -92,15 +90,15 @@
             });
         }
 
-        // Invio del form via AJAX per evitare il reload della pagina
+        // AJAX
         $("#prenotazioneForm").submit(function (event) {
-            event.preventDefault(); // Previene il refresh della pagina
+            event.preventDefault();
             
             var formData = $(this).serialize();
 
             $.post("/Prenotazione/Prenota", formData, function () {
-                aggiornaDatiSale(); // Aggiorna i dati dopo una prenotazione
-                $("#prenotazioneForm")[0].reset(); // Resetta il form
+                aggiornaDatiSale(); 
+                $("#prenotazioneForm")[0].reset();
             }).fail(function (response) {
                 alert("Errore: " + response.responseText);
             });
