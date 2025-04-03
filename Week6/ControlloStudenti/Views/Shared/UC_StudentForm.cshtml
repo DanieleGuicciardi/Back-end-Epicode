@@ -1,0 +1,40 @@
+﻿ @model AjaxMvc.Models.Student
+
+<form id="editUserForm" method="POST">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(i => i.Id)
+
+    <div class="card-body">
+        <div class="row g-3">
+
+
+            <div class="col-md-6">
+                <label for="Name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="Name" name="Name" value="@Model.Name" required />
+           </div>
+
+            <div class="col-md-6">
+                <label for="Surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="Surname" name="Surname" value="@Model.Surname" required />
+           </div>
+
+            <div class="col-md-6">
+                <label for="Email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required />
+
+            </div>
+            <div class="col-md-6">
+                <label for="DataDiNascita" class="form-label">Data di Nascita</label>
+                <input type="date" class="form-control" id="DataDiNascita" name="DataDiNascita"
+                       value="@Model.DataDiNascita.ToString("yyyy-MM-dd")" required />
+            </div>
+
+
+
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" onclick="SaveUser()" style="float: right;">Save Changes</button>
+            </div>
+        </div>
+    </div>
+</form> 

@@ -1,0 +1,115 @@
+﻿<div class="row" id="user-container">
+</div>
+
+
+<div class="modal fade" id="editUserModal" tabindex="-1" aria-labelledby="editUserModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editUserModalLabel">Edit User</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            List();
+        });
+        function List(){
+
+        fetch('/Student/List')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("user-container").innerHTML = data;
+                    let table = new DataTable("#example", {
+
+            layout: {
+                top1Start: {
+                    buttons: [
+                        {
+                            extend: "copy",
+                            text: '<i class="bi bi-clipboard"></i> Copy',
+                            className: "btn btn-secondary"
+                        },
+                        {
+                            extend: "csv",
+                            text: '<i class="bi bi-file-earmark-spreadsheet"></i> CSV',
+                            className: "btn btn-success"
+                        },
+                        {
+                            extend: "excel",
+                            text: '<i class="bi bi-file-earmark-excel"></i> Excel',
+                            className: "btn btn-success"
+                        },
+                        {
+                            extend: "pdf",
+                            text: '<i class="bi bi-file-earmark-pdf"></i> PDF',
+                            className: "btn btn-danger"
+                        },
+                        {
+                            extend: "print",
+                            text: '<i class="bi bi-printer"></i> Print',
+                            className: "btn btn-primary"
+                        }
+                    ]
+                }
+            }
+            });
+                })
+                .catch(error => OpenErrorModal(error) );
+    }
+        function EditStutent(id) {
+                fetch(`Student/Edit/${id}`)
+                    .then(response => response.text())
+                    .then(data => {
+                        console.log("ciao Edit");
+                        document.getElementById("modal-body").innerHTML = data;
+                        document.getElementById("editUserModalLabel").innerText = "Edit Student";
+                        OpenModal("editUserModal");
+
+                    })
+                    .catch(error => OpenErrorModal(error) );
+        }
+        function DeleteStudent(id){
+         fetch(`/Student/Delete/${id}`)
+                .then(response => response.text())
+                .then(data => {
+                    var jsonData = JSON.parse(data)
+                    if(jsonData.success){
+                        OpenSuccessModal(jsonData.message, null);
+                        List();
+                    }
+                    else{
+                        OpenErrorModal(jsonData.message)
+                    }
+                })
+                .catch(error => OpenErrorModal(error) );
+    }
+    function DeleteStudentConfirm(id){
+        OpenConfirmModal(id, "Are you sure you want to delete this user? This action cannot be undone.", "DeleteStudent('"+id+"')");
+    }
+    function SaveUser() {
+            let form = document.getElementById("editUserForm");
+            let formData = new FormData(form);
+
+            fetch("/Student/Save", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                   CloseModal()
+                   OpenSuccessModal(data.message, null);
+                   List();
+                }
+            })
+            .catch(error => OpenErrorModal(error) );
+        }
+</script>

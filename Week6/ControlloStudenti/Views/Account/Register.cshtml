@@ -1,0 +1,11 @@
+﻿@model RegisterViewModel
+
+<form method="post" asp-controller="Account" asp-action="Register">
+    <input placeholder="First Name" asp-for="FirstName"/>
+    <input placeholder="Last Name" asp-for="LastName" />
+    <input type="email" placeholder="Email" asp-for="EmailAddress" />
+    <input type="datetime" asp-for="BirthDate" />
+    <input type="password" placeholder="Password" asp-for="Password" />
+    <input type="password" placeholder="Confirm Password" asp-for="ConfirmPassword" />
+    <button>Register</button>
+</form>

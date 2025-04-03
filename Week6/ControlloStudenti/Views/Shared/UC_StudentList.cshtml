@@ -1,0 +1,51 @@
+﻿@model List<AjaxMvc.Models.Student>
+
+<table id="example" class="table table-bordered table-responsive table-hover" style="width:100%">
+    <caption>All students</caption>
+    <thead>
+        <tr>
+
+            <th>Name</th>
+            <th>Surname</th>
+            <th>DataDiNascita</th>
+            <th>Email</th>
+            <th>Options</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+
+                <td>@student.Name</td>
+                <td>@student.Surname</td>
+                <td>@student.DataDiNascita</td>
+                <td>@student.Email</td>
+
+                
+             
+                <td>
+                    <div class="d-grid gap-2 d-flex justify-content-center">
+                        <button class="btn btn-primary editUserBtn" onclick="EditStutent('@student.Id')">
+                            <i class="bi bi-pencil-square"></i>
+                        </button>
+                        <button class="btn btn-danger deleteUserBtn" onclick="DeleteStudentConfirm('@student.Id')">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>DataDiNascita</th>
+            <th>Email</th>
+            <th>Options</th>
+        </tr>
+    </tfoot>
+</table>
