@@ -1,0 +1,6 @@
+@spiegazione_REST_epicode_HostAddress = http://localhost:5152
+
+GET {{spiegazione_REST_epicode_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
