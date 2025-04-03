@@ -1,0 +1,48 @@
+﻿@model Prestito
+
+@{
+    ViewData["Title"] = "Modifica prestito";
+    var libri = ViewBag.BookList as SelectList;
+    var oldid = Model.Libro.Id;
+
+    TempData["OldId"] = oldid;
+}
+
+<form asp-route="EditSave" asp-route-id="@Model.Id" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group mb-3">
+        <label asp-for="NomeUtente" class="control-label">Nome Utente</label>
+        <input asp-for="NomeUtente" class="form-control" />
+        <span asp-validation-for="NomeUtente" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="EmailUtente" class="control-label">Email Utente</label>
+        <input asp-for="EmailUtente" class="form-control" />
+        <span asp-validation-for="EmailUtente" class="text-danger"></span>
+    </div>
+
+    @* <div class="form-group mb-3">
+        <label asp-for="DataPrestito" class="control-label">Data Prestito</label>
+        <input asp-for="DataPrestito" class="form-control" type="datetime-local" />
+        <span asp-validation-for="DataPrestito" class="text-danger"></span>
+    </div> *@
+
+    <div class="form-group mb-3">
+        <label asp-for="Note" class="control-label">Note</label>
+        <textarea asp-for="Note" class="form-control" rows="3"></textarea>
+        <span asp-validation-for="Note" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mb-3">
+        <label asp-for="LibroId" class="control-label">Libro</label>
+        <select asp-for="LibroId" class="form-control" asp-items="@libri"></select>
+        <span asp-validation-for="LibroId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Salva</button>
+        <a asp-controller="Prestiti" asp-action="Index" class="btn btn-secondary">Torna all'elenco</a>
+    </div>
+</form>

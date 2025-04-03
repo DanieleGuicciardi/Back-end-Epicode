@@ -1,0 +1,38 @@
+﻿@model Libro
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form asp-controller="Libri" asp-action="Create" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Titolo" class="control-label"></label>
+        <input asp-for="Titolo" class="form-control" />
+        <span asp-validation-for="Titolo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Autore" class="control-label"></label>
+        <input asp-for="Autore" class="form-control" />
+        <span asp-validation-for="Autore" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Genere" class="control-label"></label>
+        <input asp-for="Genere" class="form-control" />
+        <span asp-validation-for="Genere" class="text-danger"></span>
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="Disponibile" class="form-check-input" />
+        <label asp-for="Disponibile" class="form-check-label"></label>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ImmagineCopertina" class="control-label"></label>
+        <input asp-for="ImmagineCopertina" type="file" class="form-control" />
+        <span asp-validation-for="ImmagineCopertina" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salva</button>
+</form>

@@ -1,0 +1,19 @@
+﻿@model List<Libro>
+
+@{
+    ViewData["Title"] = "Cerca";
+}
+
+@if (Model.Any())
+{
+    @foreach (var libro in Model)
+    {
+        <div>
+            <div>@libro.Titolo</div>
+            <div>@libro.Autore</div>
+            <div>@libro.Genere</div>
+            <div>@libro.Prestiti?.Any().ToString()</div>
+        </div>
+        <hr />
+    }
+}

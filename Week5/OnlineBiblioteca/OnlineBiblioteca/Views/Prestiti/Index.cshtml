@@ -1,0 +1,22 @@
+﻿@model List<Prestito>
+
+@{
+    ViewData["Title"] = "Prestiti in corso";
+}
+
+@if (Model.Any())
+{
+    @foreach(var prestito in Model)
+    {
+        <div>
+            <div>Nome utente: @prestito.NomeUtente</div>
+            <div>Email utente: @prestito.EmailUtente</div>
+            <div>Titolo: @prestito.Libro.Titolo</div>
+            <div>Data prestito: @prestito.DataPrestito</div>
+            <div>Scaduto: @(prestito.Scaduto ? "si" : "no")</div>
+            <a asp-controller="Prestiti" asp-action="Details" asp-route-id="@prestito.Id">Dettagli</a>
+        </div>
+        <hr />
+    }
+}
+

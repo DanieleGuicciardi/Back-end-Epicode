@@ -1,8 +1,28 @@
-﻿@{
+﻿@model List<Libro>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<form method="get" asp-controller="Libri" asp-action="index">
+    <input name="parolachiave" type="text" />
+    <button>Cerca</button>
+</form>
+
+<a asp-route="AggiungiLibro">Aggiungi nuovo</a>
+
+@if (Model.Any())
+{
+    @foreach(var libro in Model)
+    {
+        <div>
+            <img src="@libro.PercorsoImmagineCopertina"/>
+            <div>Titolo: @libro.Titolo</div>
+            <div>Autore: @libro.Autore</div>
+            <div>Genere: @libro.Genere</div>
+            <div>Disponibile: @(libro.Disponibile ? "si" : "no")</div>
+            <a asp-controller="Libri" asp-action="Details" asp-route-id="@libro.Id">Dettagli</a>
+        </div>
+        <hr/>
+    }
+}

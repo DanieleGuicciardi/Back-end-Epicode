@@ -1,0 +1,16 @@
+﻿@model Libro
+
+@{
+    ViewData["Title"] = "Cerca";
+}
+
+<div>
+    <div>Titolo: @Model.Titolo</div>
+    <div>Autore: @Model.Autore</div>
+    <div>Genere: @Model.Genere</div>
+    <div>Disponibile: @(Model.Disponibile ? "si" : "no")</div>
+    <a asp-route="EditPage" asp-route-id="@Model.Id">Modifica</a>
+    <a asp-controller="Libri" asp-action="Delete" asp-route-id="@Model.Id">Elimina</a>
+</div>
+<hr />
+
